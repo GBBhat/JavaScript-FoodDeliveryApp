@@ -1,0 +1,81 @@
+/* important add the below style */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background: rgb(33, 29, 24);
+    color:white;
+    height:50px;
+    padding:5px 5px;
+
+}
+
+.search{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.rst-section{
+    display: grid;
+    grid-template-columns: repeat(3, 200px); /* auto-fit */
+    gap:0.75rem;
+    /* justify-content: center; */
+    margin-top: 20px;
+    margin-left:30px;
+    /* padding:1rem */
+}
+
+.rst-card{
+    display:flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: .25rem;
+}
+
+.image{
+    height: 150px;
+    width: 198px;
+}
+
+.name-fav{
+    display:flex;   
+    justify-content: space-between; 
+    align-items: center;
+    margin:5px;
+}
+.cat-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bi-star-fill{
+    color: rgb(235, 139, 14);
+}
+.bi-heart-fill{
+   color: red;
+}
+
+.pagination{
+    /* float:inline-end;
+    position: relative; */
+    margin-left: 500px;
+}
+
+.pagination  a{
+    padding: 3px 6px;
+    text-decoration: none;
+    float:left;
+    color:black;
+    transition: background-color 1s;
+}
+
+.pagination a.active{
+    background-color: rgb(121, 158, 232);
+    color:white;
+}
+
+.pagination > a:hover:not(.active){
+    background-color: rgb(198, 200, 204);
+}
